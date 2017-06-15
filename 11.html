@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+	#box {
+		width: 400px;
+		margin: 0 auto;
+		padding: 10px;
+		border: 1px solid #000;
+		display: -webkit-flex;
+		flex-wrap: wrap;			/*允许换行*/
+		justify-content: space-between; /* 项目位于容器的两侧*/
+	}
+	#box1 {
+		width: 400px;
+		margin: 0 auto;
+		padding: 10px;
+		border: 1px solid #000;
+		display: -webkit-flex;
+		flex-wrap: wrap;			/*允许换行*/
+		justify-content: space-around; /* 	项目位于各行之前、之间、之后都留有空白的容器内。*/
+	}
+	
+	.item {
+		height: 100px;
+		text-align: center;
+	}
+	.box1 {
+		background: #999;
+		width: 100px;
+	}
+	.box2 {
+		background: #f60;
+		width: 200px;
+	}
+</style>
+<body>
+	<center>
+		<h2>justify-content: space-between;</h2>
+	</center>
+	<div id="box">
+		<div class="item box1">item1 width: 100px;</div>
+		<div class="item box2">item2 width: 200px;</div>
+	</div>
+	<center>
+		<h2>justify-content: space-around;</h2>
+		<center>项目位于各行之前、之间、之后都留有空白的容器内</center>
+	</center>
+	<div id="box1">
+		<div class="item box1">item1 width: 100px;</div>
+		<div class="item box2">item2 width: 200px;</div>
+	</div>
+</body>
+</html>
