@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+	#box {
+		width: 400px;
+		margin: 0 auto;
+		padding: 10px;
+		border: 1px solid #000;
+		display: -webkit-flex;
+		flex-wrap: wrap;			/*允许换行*/
+		justify-content:flex-start;/* default 项目位于容器的开头*/
+	}
+	
+	.item {
+		height: 100px;
+		text-align: center;
+	}
+	.box1 {
+		background: #999;
+		width: 100px;
+	}
+	.box2 {
+		background: #f60;
+		width: 200px;
+	}
+</style>
+<body>
+	<center>
+		<h1>justify-content:flex-start</h1>
+		<center>项目位于容器的开头</center>
+	</center>
+	<div id="box">
+		<div class="item box1">item1 width: 100px;</div>
+		<div class="item box2">item2 width: 200px;</div>
+	</div>
+</body>
+</html>
