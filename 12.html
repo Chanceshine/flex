@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+	}
+	#box {
+		width: 600px;
+		height: 500px;
+		margin: 0 auto;
+		padding: 10px;
+		border: 1px solid #000;
+		display: -webkit-flex;
+		flex-wrap: wrap;			/*允许换行*/
+		justify-content: space-between; /* 项目位于容器的两侧*/
+	}
+	
+	.item {
+		
+		text-align: center;
+	}
+	.box1 {
+		background: #999;
+		width: 100px;
+		height: 50px;
+		align-self:flex-start;		/*	元素位于容器的开头（左上）。*/
+	}
+	.box2 {
+		background: #f60;
+		width: 100px;
+		height: 50px;
+		align-self:flex-end;		/*	元素位于容器的结尾（右下）。*/
+	}
+	.box3 {
+		background: orange;
+		width: 100px;
+		height: 50px;
+		align-self:center;			/*	元素位于容器的中心。*/
+	}
+	.box4 {
+		background: red;
+		width: 100px;
+		height: 50px;
+		align-self:baseline;		/*	元素位于容器的基线上*/
+	}
+	.box5 {
+		background: green;
+		width: 100px;
+		align-self:stretch;			/*元素被拉伸以适应容器*/
+	}
+</style>
+<body>
+	<center>
+		<h2>align-self：flex子项单独在侧轴(纵轴)方向上的对齐方式</h2>
+	</center>
+	<div id="box">
+		<div class="item box1">flex-start</div>
+		<div class="item box2">flex-end</div>
+		<div class="item box3">center</div>
+		<div class="item box4">baseline</div>
+		<div class="item box5">stretch</div>
+	</div>
+</body>
+</html>
